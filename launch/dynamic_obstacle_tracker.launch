@@ -7,8 +7,9 @@
     <arg name="min_dist_th" default="1.0"/>
 
     <!-- Nodes -->
-    <node pkg="dynamic_obstacle_tracker" type="dynamic_obstacle_tracker" name="dynamic_obstacle_tracker" output="$(arg output)">
+    <node pkg="dynamic_obstacle_tracker" type="dynamic_obstacle_tracker" name="dynamic_obstacle_tracker" output="screen">
         <param name="global_frame" value="$(arg global_frame)"/>
         <param name="min_dist_th" value="$(arg min_dist_th)"/>
+        <param name="rosconsole/logger_level" value="DEBUG"/>
     </node>
 </launch>

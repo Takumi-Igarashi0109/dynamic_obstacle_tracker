@@ -28,7 +28,8 @@ include_directories(
   ${PCL_INCLUDE_DIRS}
 )
 
-add_executable(dynamic_obstacle_tracker src/dynamic_obstacle_tracker.cpp)
+add_executable(dynamic_obstacle_tracker src/dynamic_obstacle_tracker.cpp )
+##add_executable(dynamic_obstacle_tracker_id src/dynamic_obstacle_tracker_id.cpp)
 target_link_libraries(dynamic_obstacle_tracker ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 #############
